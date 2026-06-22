@@ -233,6 +233,10 @@ logo {
     font-size: 18px;
 }
 
+.hero-texto-mobile {
+    display: none;
+}
+
 .oferta-btn {
     width: 340px;
     max-width: 100%;
