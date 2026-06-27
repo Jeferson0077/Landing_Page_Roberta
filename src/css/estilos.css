@@ -9,6 +9,7 @@
     --dourado-hover: #FFD700;
     --fundo: #050505;
     --card: #101010;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -25,6 +26,10 @@ body {
     justify-content: space-between;
     background: #080808;
     border-bottom: 1px solid #000000;
+}
+
+.menu-mobile {
+    display: none;
 }
 
 logo {
@@ -422,6 +427,11 @@ section h2 {
     font-size: 20px;
 }
 
+.oferta .cadeado {
+    width: 22px;
+    align-items: center;
+}
+
 .faq {
     background: #080808;
 }
@@ -435,6 +445,31 @@ section h2 {
     border-radius: 10px;
     font-weight: 700;
     cursor: pointer;
+    color: #fedc57;
+}
+
+.pergunta:hover {
+    border-color: #FFD700;
+    transform: translateY(-2px);
+}
+
+.pergunta:active {
+    transform: scale(.98);
+}
+
+.resposta {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-top: 0;
+    scroll-behavior: smooth;
+}
+
+.pergunta.ativa .resposta {
+    max-height: 200px;
+    margin-top: 15px;
 }
 
 .footer {

@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/responsivo.css">
 
-
 </head>
 
 <body>
@@ -26,6 +25,13 @@
             <a href="#depoimentos">Depoimentos</a>
             <a href="#faq">Perguntas</a>
         </nav>
+
+        <button class="menu-mobile">
+            ☰
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
         <a class="btn-header btn-principal" href="https://pay.kiwify.com.br/pXfi8ms">Quero emagrecer agora</a>
     </header>
@@ -215,8 +221,9 @@
         </section>
 
         <section class="professora" id="professora">
-            <div>
-                <img src="./imagens/img.png" alt="Nutricionista Roberta Modesto">
+
+            <div class="foto-professora">
+                <img src="./src/imagens/queime-gordura.png" alt="Roberta Modesto">
             </div>
 
             <div>
@@ -229,7 +236,22 @@
                     perder peso sem dietas extremas e sem passar horas na academia.
                 </p>
             </div>
+
+            <div class="foto-professora">
+                <img src="./src/imagens/alunos.png" alt="João">
+            </div>
+            <div>
+                <h2>Conheça seu personal</h2>
+                <h3>João</h3>
+
+                <p>
+                    Nutricionista e especialista em emagrecimento saudável.
+                    Criadora de um método simples, direto e prático para mulheres que desejam
+                    perder peso sem dietas extremas e sem passar horas na academia.
+                </p>
+            </div>
         </section>
+
 
         <section class="depoimentos" id="depoimentos">
             <h2>Resultados de quem já começou</h2>
@@ -251,6 +273,7 @@
             <p>ou 12x de R$7,41</p>
 
             <a class="btn-principal" href="https://pay.kiwify.com.br/pXfi8ms">
+                <img class="cadeado" src="./src/imagens/cadeado-compra.png" alt="cadeado">
                 Quero emagrecer agora
             </a>
 
@@ -260,11 +283,35 @@
         <section class="faq" id="faq">
             <h2>Dúvidas frequentes</h2>
 
-            <div class="pergunta">Em quanto tempo começo a ver resultados?</div>
-            <div class="pergunta">Posso fazer mesmo sendo iniciante?</div>
-            <div class="pergunta">Preciso de equipamentos?</div>
-            <div class="pergunta">O acesso é vitalício?</div>
-            <div class="pergunta">A compra é segura?</div>
+            <div class="pergunta">Em quanto tempo começo a ver resultados?
+
+                <div class="resposta">Os resultados variam de pessoa para pessoa, mas seguindo corretamente o
+                    método,muitas pessoas começam a perceber mudanças nas primeiras semanas.</div>
+            </div>
+
+            <div class="pergunta">Posso fazer mesmo sendo iniciante?
+
+                <div class="resposta">Sim! O método foi desenvolvido para iniciantes, com um passo a passo simples e
+                    fácil de acompanhar.</div>
+            </div>
+
+            <div class="pergunta">Preciso de equipamentos?
+
+                <div class="resposta">Não. O método pode ser feito em casa, sem equipamentos. Se desejar, você pode usar
+                    acessórios simples para potencializar os resultados.</div>
+            </div>
+
+            <div class="pergunta">O acesso é vitalício?
+
+                <div class="resposta">Sim! Após a compra, o acesso é vitalício, para você assistir às aulas no seu
+                    ritmo, quando e onde quiser.</div>
+            </div>
+
+            <div class="pergunta">A compra é segura?
+
+                <div class="resposta">Sim! O pagamento é processado pela Kiwify, uma plataforma segura e confiável para
+                    a compra de cursos online. Após a confirmação, seu acesso é liberado automaticamente.</div>
+            </div>
         </section>
 
     </main>
@@ -272,5 +319,7 @@
     <footer class="footer">
         <p>© 2026 ClubFIT. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="./src/js/index.js"></script>
 
 </body>

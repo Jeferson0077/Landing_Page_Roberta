@@ -1,12 +1,12 @@
 @media (max-width: 1280px) {
 
     .header {
-        height: 57px;
+        height: 70px;
         padding: 8px 14px;
     }
 
     .logo img {
-        height: 61px;
+        height: 75px;
     }
 
     .menu,
@@ -14,10 +14,38 @@
         display: none;
     }
 
-    .header::after {
-        content: "☰";
-        color: #fff;
-        font-size: 26px;
+    .menu {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+        background: none;
+        border: none;
+        color: #FFD700;
+        font-size: 33px;
+        cursor: pointer;
+    }
+
+    .menu.ativo {
+        display: flex;
+        flex-direction: column;
+
+        position: absolute;
+        top: 57px;
+        left: 0;
+        width: 100%;
+
+        background: #0c0c0c;
+        padding: 20px;
+        z-index: 999;
+    }
+
+    .menu.ativo a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 3px 0;
+        border-bottom: 1px solid #151515;
     }
 
     .prova-social {
@@ -166,11 +194,11 @@
     .oferta-btn,
     .btn-principal {
         width: 100%;
-        padding: 12px;
-        font-size: 12px;
-        margin-top: 10px;
+        padding: 4px;
+        font-size: 13px;
+        margin-top: 7px;
         text-align: center;
-        margin-top: 2px;
+        align-items: center;
     }
 
     .seguro {
@@ -226,19 +254,26 @@
     }
 
     section h2 {
-        font-size: 22px;
+        font-size: 19px;
         line-height: 1.15;
         margin-bottom: 22px;
     }
 
-    .cards,
-    .cards-resultados {
-        grid-template-columns: 1fr;
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
+        display: grid;
+        width: 100%;
+
+    }
+
+    .cards-resultados {
+        padding: 1px;
     }
 
     .card {
-        padding: 11px;
+        padding: 4px;
     }
 
     .card span {
@@ -270,36 +305,99 @@
     }
 
     .card-resultados h3 {
-        font-size: 16px;
+        font-size: 18px;
         margin: 0 0 5px 0;
         line-height: 1.1;
     }
 
     .card-resultados p {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 1.25;
         margin: 0;
     }
 
-    .professora {
-        grid-template-columns: 1fr;
+    .foto-professora {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         gap: 20px;
+    }
+
+    .professora-foto img {
+        width: 60px;
+        height: auto;
+    }
+
+    .professora {
+        display: flex;
+        flex-direction: column;
+        gap: 18px
     }
 
     .professora h2,
     .professora h3 {
         text-align: center;
+        margin-bottom: 6px;
     }
 
     .professora h3 {
         font-size: 28px;
+
     }
 
     .professora p {
         font-size: 14px;
+
+    }
+
+    .oferta h2,
+    .oferta p {
+        font-size: 20px;
+
+
     }
 
     .oferta h3 {
-        font-size: 48px;
+        font-size: 45px;
+    }
+
+    .oferta .btn-principal {
+        width: 100%;
+        padding-top: 0px;
+        font-size: 15px;
+        padding: 10px;
+
+    }
+
+    .oferta .cadeado {
+        width: 25px;
+        padding-top: 0px;
+    }
+
+    .pergunta {
+        max-width: 100%;
+        margin: 10px auto;
+        padding: 16px 14px;
+        border-radius: 8px;
+        font-size: 13px;
+        line-height: 1.3;
+    }
+
+    .pergunta:hover {
+        transform: none;
+    }
+
+    .pergunta:active {
+        transform: scale(.98);
+    }
+
+    .resposta {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .pergunta.ativa .resposta {
+        max-height: 260px;
+        margin-top: 10px;
     }
 }
