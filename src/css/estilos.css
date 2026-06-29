@@ -480,14 +480,13 @@ section h2 {
     color: #888;
 }
 
-@media (max-width: 1024px) {
-
+@media (max-width: 1366px) {
     .header {
         padding: 0 4%;
     }
 
     .menu {
-        gap: 18px;
+        gap: 16px;
     }
 
     .menu a {
@@ -501,54 +500,35 @@ section h2 {
 
     .hero {
         min-height: 620px;
-        padding: 50px 4%;
-        grid-template-columns: 1fr 360px;
+        padding: 45px 4%;
+        grid-template-columns: 1fr 320px;
         gap: 25px;
     }
 
     .hero h1 {
-        font-size: 56px;
-        max-width: 600px;
+        font-size: 52px;
+        max-width: 580px;
     }
 
     .hero h2 {
-        font-size: 42px;
-        max-width: 600px;
+        font-size: 38px;
     }
 
     .hero p {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .destaque {
-        max-width: 560px;
-        font-size: 18px;
+        max-width: 540px;
+        font-size: 17px;
     }
 
     .hero-oferta {
-        width: 330px;
+        width: 310px;
         padding: 20px;
     }
 
     .hero-oferta h3 {
-        font-size: 48px;
-    }
-
-    .oferta-btn {
-        width: 100%;
-        padding: 18px 10px;
-        font-size: 12px;
-    }
-
-    .prova-social {
-        gap: 18px;
-    }
-
-    .prova-social div {
-        font-size: 13px;
-    }
-
-    .icone-principal {
-        height: 24px;
+        font-size: 46px;
     }
 }
