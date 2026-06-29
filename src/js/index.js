@@ -1,7 +1,7 @@
 
 const perguntas = document.querySelectorAll(".pergunta");
 
-perguntas.forEach(pergunta => {
+perguntas.forEach((pergunta) => {
     pergunta.addEventListener("click", () => {
         pergunta.classList.toggle("ativa");
     });
@@ -12,6 +12,7 @@ const botao = document.querySelector(".menu-mobile");
 
 botao.addEventListener("click", () => {
     menu.classList.toggle("ativo");
+    botao.classList.toggle("ativo");
 });
 
 const links = document.querySelectorAll(".menu a");
@@ -19,5 +20,6 @@ const links = document.querySelectorAll(".menu a");
 links.forEach(link => {
     link.addEventListener("click", () => {
         menu.classList.remove("ativo");
+        botao.classList.remove("ativo");
     });
 });

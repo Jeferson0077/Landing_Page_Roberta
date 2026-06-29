@@ -98,16 +98,19 @@ logo {
     font-weight: 800;
     text-align: center;
     Margin: 3px;
+    gap: 10px;
+    display: flex;
 }
 
 .prova-social span {
-    text-align: center;
-
+    align-items: center;
+    display: flex;
+    height: 28px;
 }
 
 .icone-principal {
-    height: 30px;
-    align-items: center;
+    height: 32px;
+    flex-shrink: 0;
 }
 
 .hero {
@@ -170,9 +173,9 @@ logo {
 
 .destaque {
     display: inline-block;
-    background: #FFD700;
-    border: 4px solid #FFD700;
-    padding: 8px 126px;
+    background: #ffd90084;
+    border: 2px solid #ffd900bc;
+    padding: 8px 50px;
     border-radius: 16px;
     font-weight: 700;
     max-width: 700;
@@ -460,16 +463,14 @@ section h2 {
 .resposta {
     max-height: 0;
     overflow: hidden;
-    transition: max-height .4s ease;
+    opacity: 0;
+    transition: max-height .3s ease, opacity .3s ease;
     color: #ffffff;
-    line-height: 1.6;
-    margin-top: 0;
-    scroll-behavior: smooth;
 }
 
 .pergunta.ativa .resposta {
     max-height: 200px;
-    margin-top: 15px;
+    opacity: 1;
 }
 
 .footer {
@@ -477,4 +478,77 @@ section h2 {
     text-align: center;
     background: #000;
     color: #888;
+}
+
+@media (max-width: 1024px) {
+
+    .header {
+        padding: 0 4%;
+    }
+
+    .menu {
+        gap: 18px;
+    }
+
+    .menu a {
+        font-size: 11px;
+    }
+
+    .btn-header {
+        padding: 13px 18px;
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 620px;
+        padding: 50px 4%;
+        grid-template-columns: 1fr 360px;
+        gap: 25px;
+    }
+
+    .hero h1 {
+        font-size: 56px;
+        max-width: 600px;
+    }
+
+    .hero h2 {
+        font-size: 42px;
+        max-width: 600px;
+    }
+
+    .hero p {
+        font-size: 22px;
+    }
+
+    .destaque {
+        max-width: 560px;
+        font-size: 18px;
+    }
+
+    .hero-oferta {
+        width: 330px;
+        padding: 20px;
+    }
+
+    .hero-oferta h3 {
+        font-size: 48px;
+    }
+
+    .oferta-btn {
+        width: 100%;
+        padding: 18px 10px;
+        font-size: 12px;
+    }
+
+    .prova-social {
+        gap: 18px;
+    }
+
+    .prova-social div {
+        font-size: 13px;
+    }
+
+    .icone-principal {
+        height: 24px;
+    }
 }

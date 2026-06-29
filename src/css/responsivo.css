@@ -27,6 +27,14 @@
         cursor: pointer;
     }
 
+    .menu-mobile::before {
+        content: "☰";
+    }
+
+    .menu-mobile.ativo::before {
+        content: "✕";
+    }
+
     .menu.ativo {
         display: flex;
         flex-direction: column;
@@ -52,17 +60,17 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 2px;
-        padding: 6px 2px;
+        padding: 6px 2x;
     }
 
     .prova-social div {
-        font-size: 8px;
+        font-size: 9px;
         line-height: 1.1;
         text-align: center;
     }
 
     .icone-principal {
-        height: 20px;
+        height: 25px;
     }
 
     .hero {
@@ -268,6 +276,12 @@
 
     }
 
+    .ultimo-card {
+        grid-column: 1 / -1;
+        justify-self: center;
+        max-width: 250px;
+    }
+
     .cards-resultados {
         padding: 1px;
     }
@@ -392,12 +406,14 @@
     }
 
     .resposta {
-        font-size: 12px;
-        line-height: 1.4;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height .3s ease, opacity .3s ease;
     }
 
     .pergunta.ativa .resposta {
-        max-height: 260px;
-        margin-top: 10px;
+        max-height: 200px;
+        opacity: 1;
     }
 }
