@@ -1,4 +1,4 @@
-@media (max-width: 1280px) {
+@media (max-width: 780px) {
 
     .header {
         height: 70px;
@@ -38,12 +38,10 @@
     .menu.ativo {
         display: flex;
         flex-direction: column;
-
         position: absolute;
         top: 57px;
         left: 0;
         width: 100%;
-
         background: #0c0c0c;
         padding: 20px;
         z-index: 999;

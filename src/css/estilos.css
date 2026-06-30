@@ -84,6 +84,12 @@ logo {
     transform: translateY(-2px);
 }
 
+.btn-header .cadeado {
+    width: 22px;
+    align-items: center;
+
+}
+
 .prova-social {
     display: flex;
     justify-content: center;
@@ -478,57 +484,4 @@ section h2 {
     text-align: center;
     background: #000;
     color: #888;
-}
-
-@media (max-width: 1366px) {
-    .header {
-        padding: 0 4%;
-    }
-
-    .menu {
-        gap: 16px;
-    }
-
-    .menu a {
-        font-size: 11px;
-    }
-
-    .btn-header {
-        padding: 13px 18px;
-        font-size: 12px;
-    }
-
-    .hero {
-        min-height: 620px;
-        padding: 45px 4%;
-        grid-template-columns: 1fr 320px;
-        gap: 25px;
-    }
-
-    .hero h1 {
-        font-size: 52px;
-        max-width: 580px;
-    }
-
-    .hero h2 {
-        font-size: 38px;
-    }
-
-    .hero p {
-        font-size: 20px;
-    }
-
-    .destaque {
-        max-width: 540px;
-        font-size: 17px;
-    }
-
-    .hero-oferta {
-        width: 310px;
-        padding: 20px;
-    }
-
-    .hero-oferta h3 {
-        font-size: 46px;
-    }
 }
